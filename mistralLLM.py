@@ -1,16 +1,16 @@
 from langchain_mistralai import ChatMistralAI
+import dotenv
 import os
 
+dotenv.load_dotenv()
 
 
 
 
 llm = ChatMistralAI(
-    model="mistral-large-latest",
-    temperature=0,
-    max_retries=2,
-    # other params...
+    api_key=os.getenv("API_KEY"),
+    
 )
 
 
-print llm.invoke("Hello, how are you?")
+print (llm.invoke("Hello, how are you?"))
