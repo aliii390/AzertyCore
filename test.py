@@ -1,5 +1,6 @@
 
 text = "./data/books/AliceInWonderland.txt"
+from langchain import RecursiveCharacterTextSplitter
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
