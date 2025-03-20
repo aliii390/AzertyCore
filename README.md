@@ -2,6 +2,7 @@
 
 ```bash
 pip install -U langchain langchain_mistralai
+pip install python-dotenv
 ```
 
 
