@@ -1,4 +1,9 @@
 from langchain_mistralai import ChatMistralAI
+import os
+
+
+
+
 
 llm = ChatMistralAI(
     model="mistral-large-latest",
@@ -6,3 +11,6 @@ llm = ChatMistralAI(
     max_retries=2,
     # other params...
 )
+
+
+print llm.invoke("Hello, how are you?")
